@@ -9,6 +9,7 @@ buton.addEventListener('click', () => {
     const li = document.createElement('li');
     // üretilen tagin içerisine yazma
     li.textContent = 'yeni kurs'
+    li.style.cursor = "pointer"
     // Sonuna ekleme yapar
     // ul.append(li)
     // En başına ekleme yapılır
@@ -16,8 +17,11 @@ buton.addEventListener('click', () => {
 })
 
 
-list.forEach(kurs => {
-   kurs.addEventListener("click",(e) => {
-       e.target.remove()
-   })
-});
+ul.addEventListener('click', (e) => {
+
+    if(e.target.tagName === "LI")
+    {
+        e.target.remove();
+    }
+
+})
