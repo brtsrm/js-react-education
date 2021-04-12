@@ -11,7 +11,6 @@ input.addEventListener("click", (e) => {
     if (!input.checked) {
         button.disabled = true
         button.innerText = "Pasif"
-
     } else {
         button.disabled = false
         button.innerText = "Aktif"
