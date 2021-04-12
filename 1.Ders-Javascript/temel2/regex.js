@@ -5,8 +5,6 @@ let desen = /[a-z0-9]{7,}/;
 let sonuc = desen.test(parola)
 // console.log(sonuc);
 
-
-
 // Sonuç sağlanırsa : -1 bir olarak dönüyor. 
 // Sağlanmaz ise : 0 olarak dönüyor
 sonuc = parola.search(desen);
