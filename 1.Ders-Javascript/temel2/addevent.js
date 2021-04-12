@@ -19,8 +19,7 @@ buton.addEventListener('click', () => {
 
 ul.addEventListener('click', (e) => {
 
-    if(e.target.tagName === "LI")
-    {
+    if (e.target.tagName === "LI") {
         e.target.remove();
     }
 
