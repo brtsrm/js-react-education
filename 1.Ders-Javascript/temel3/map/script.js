@@ -1,16 +1,16 @@
-// const dizi = [21, 32, 244, 4343, 5, 13, 4];
+const dizi = [21, 32, 244, 4343, 5, 13, 4];
 
-// const yeniDizi = dizi.map(val => {
+const yeniDizi = dizi.map(val => {
 
-//     if (val > 50) {
-//         return { yeniDiziEleman: val / 2, eskiDeger: val }
-//     } else {
-//         return { diziElaman: val }
-//     }
+    if (val > 50) {
+        return { yeniDiziEleman: val / 2, eskiDeger: val }
+    } else {
+        return { diziElaman: val }
+    }
 
-// })
+})
 
-// console.log(yeniDizi)
+console.log(yeniDizi)
 
 const nesneDizisi = [
     { isim: 'Berat', uyelik: true },

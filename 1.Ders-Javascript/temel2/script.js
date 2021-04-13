@@ -1,28 +1,28 @@
-// let kullanici = {
+ let kullanici = {
 
-//     isim: 'Berat',
-//     soyisim: 'SARMIŞ',
-//     yas: 30,
-//     tel: '555555555',
-//     kurslar: ['javascript', 'laravel', 'react', 'react-native'],
+     isim: 'Berat',
+     soyisim: 'SARMIŞ',
+     yas: 30,
+     tel: '555555555',
+     kurslar: ['javascript', 'laravel', 'react', 'react-native'],
 
-//     girisYap() {
-//         console.log('giriş yapıldı')
-//     },
+     girisYap() {
+         console.log('giriş yapıldı')
+     },
 
-//     kursOlustur(kurs) {
-//         console.log(`${kurs} kursu oluşturuldu`);
-//         this.kurslar.push(kurs)
-//     },
-//     kurslarGetir(){
-//         console.log(kullanici.kurslar)
-//     }
-// }
+     kursOlustur(kurs) {
+         console.log(`${kurs} kursu oluşturuldu`);
+         this.kurslar.push(kurs)
+     },
+     kurslarGetir(){
+         console.log(kullanici.kurslar)
+     }
+ }
 
-// kullanici.girisYap()
-// kullanici.kursOlustur('Laravel');
+ kullanici.girisYap()
+ kullanici.kursOlustur('Laravel');
 
-// kullanici.kurslarGetir()
+ kullanici.kurslarGetir()
 
 
 let kullanicilar = [

@@ -20,10 +20,9 @@ const nesneDizisi = [
     { isim: 'Zeynep', not: 63 },
 ]
 
-nesneDizisi.sort((ikinci,birinci) => {
-     if(ikinci.isim>birinci.isim)
-     {
-         return -1;
-     }
+nesneDizisi.sort((ikinci, birinci) => {
+    if (ikinci.isim > birinci.isim) {
+        return -1;
+    }
 })
 console.log(nesneDizisi)
