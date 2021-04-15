@@ -1,5 +1,6 @@
 const tarih = new Date();
 
+// Tipini gösteriri
 console.log(typeof tarih)
 
 // Yil getirir

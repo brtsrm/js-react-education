@@ -1,6 +1,6 @@
 const dizi = [21, 32, 244, 4343, 5, 13, 4];
 
-const yeniDizi = dizi.map(val => {
+const yeniDizis = dizi.map(val => {
 
     if (val > 50) {
         return { yeniDiziEleman: val / 2, eskiDeger: val }
@@ -10,7 +10,7 @@ const yeniDizi = dizi.map(val => {
 
 })
 
-console.log(yeniDizi)
+console.log(yeniDizis)
 
 const nesneDizisi = [
     { isim: 'Berat', uyelik: true },
@@ -20,7 +20,6 @@ const nesneDizisi = [
     { isim: 'Zeynep', uyelik: true },
     { isim: 'Çiğdem', uyelik: false },
 ]
-
 
 let yeniDizi = nesneDizisi.map(val => {
 

@@ -1,9 +1,10 @@
 const metinDizi = ['metin', 'ali', 'berat'];
 
-
+// A-z listelemesini yapıyor
 metinDizi.sort();
 // console.log(metinDizi)
 
+// Tersine çevrioyr
 metinDizi.reverse();
 // console.log(metinDizi)
 
@@ -30,3 +31,5 @@ nesneDizi.sort((ilk, ikinci) => {
         return 0;
     }
 })
+
+

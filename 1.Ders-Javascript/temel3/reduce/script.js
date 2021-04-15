@@ -1,4 +1,4 @@
-const dizi = [12, 13, 88, 5, 6, 7, 12, 6, 133, 1313];
+const dizi = [1, 2, 3];
 
 const sonuc = dizi.reduce((key, deger) => {
 

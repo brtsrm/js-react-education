@@ -1,8 +1,8 @@
 const button = document.querySelector("button")
 
-// button.addEventListener('click',() => {
-//     console.log("merhaba berat")
-// })
+button.addEventListener('click',() => {
+    console.log("merhaba berat")
+})
 
 const input = document.querySelector("input")
 

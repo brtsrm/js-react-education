@@ -36,7 +36,6 @@ form.addEventListener('submit', e => {
     e.preventDefault();
     const yapilacak = form.add.value.toLowerCase();
     if (yapilacak.length) {
-
         templateOlustur(yapilacak)
         form.reset()
     }
