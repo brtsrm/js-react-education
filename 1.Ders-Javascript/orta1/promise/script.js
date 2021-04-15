@@ -1,5 +1,6 @@
 // DIş kaynaktan veri alınırken bir süre beklemesi
 
+const verileriGetir = (kaynak) => {
     
     return new Promise((resolve,reject) => {
         // Resolve doğru veriyi gösteriri
