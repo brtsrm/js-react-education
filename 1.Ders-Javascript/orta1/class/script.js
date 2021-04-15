@@ -38,6 +38,10 @@ personel.toplantiyaGir().isYap()
 
 class Yonetici extends Personel {
 
+    constructor(ad,unvan){
+        super(ad)
+        this.unvan = unvan;
+    }
 
     personelKov(per){
         calisanlar = calisanlar.filter(p => {
