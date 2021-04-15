@@ -14,19 +14,46 @@
 
 // console.log(personel2)
 
-class Personel{
-    constructor(ad){
+class Personel {
+    constructor(ad) {
         this.ad = ad,
-        this.birim = 'Bilgi işlem',
-        this.gorev = 'Yzılım'
+            this.birim = 'Bilgi işlem',
+            this.gorev = 'Yzılım'
 
     }
-    isYap(){
+    isYap() {
         console.log(`${this.ad} ${this.gorev} görevini gerçekleştirdi. `);
         return this;
     }
-    toplantiyaGir(){
+    toplantiyaGir() {
         console.log(`${this.ad} Toplantıya girdi`);
         return this;
     }
 }
+
+
+const personel = new Personel("Berat");
+personel.toplantiyaGir().isYap()
+
+
+class Yonetici extends Personel {
+
+
+    personelKov(per){
+        calisanlar = calisanlar.filter(p => {
+            return p.ad != per.ad;
+        })
+    }
+
+}
+
+
+const yonetici = new Yonetici("Kerem");
+
+console.log(yonetici)
+
+let calisanlar = [yonetici,personel]
+console.log(calisanlar)
+yonetici.personelKov(yonetici)
+console.log(calisanlar)
+
