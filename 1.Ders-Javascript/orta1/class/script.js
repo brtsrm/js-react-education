@@ -18,10 +18,15 @@ class Personel{
     constructor(ad){
         this.ad = ad,
         this.birim = 'Bilgi işlem',
-        this.gorev = 'YAzılım'
+        this.gorev = 'Yzılım'
 
     }
+    isYap(){
+        console.log(`${this.ad} ${this.gorev} görevini gerçekleştirdi. `);
+        return this;
+    }
+    toplantiyaGir(){
+        console.log(`${this.ad} Toplantıya girdi`);
+        return this;
+    }
 }
-
-const personel = new Personel("berat");
-console.log(personel)
