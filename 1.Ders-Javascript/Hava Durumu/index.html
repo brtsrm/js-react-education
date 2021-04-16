@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Hava Durumu</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+ 
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container my-5 mx-auto">
+
+        <h1 class="text-muted text-center my-4">Hava Durumu</h1>
+        <form action="" class="konum-degistir my-4 text-center text-muted">
+            <label for="sehir">Hava durumunu öğrenmek için konum giriniz</label>
+            <input type="text" class="form-control p-4" name="sehir" />
+        </form>
+        <div class="card shadow-lg rounden d-none">
+            <img src="https://via.placeholder.com/400x300" class="zaman card-img top">
+            <div class="icon bg-light mx-auto text-center">
+                <img src="">
+            </div>
+            <div class="text-muted text-uppercase text-center detay">
+                <h5 class="my-3">Şehir</h5>
+                <div class="my-3">Hava Durumu</div>
+                <div class="display-4 my-4">
+                    <span>Sıcaklık</span>
+                    <span>&deg; C</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script/tahmin.js"></script>
+    <script src="script/app.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
