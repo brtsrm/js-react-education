@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Sistemi</title>
+    <link rel="stylesheet" media="all" href="assets/css/material.css">
+    <style>
+        li {
+            display: none;
+        }
+        .makale {
+            display: block;
+        }
+    </style>
+</head>
+
+<body class=" accent-3">
+
+    <!-- Navbar Start -->
+    <nav class="z-depth-0 deep-orange ">
+        <div class="nav-wrapper container">
+            <a href="#" class="brand-logo">
+                <img src="assets/img/logo.png" alt="" id="" style="width:64px;margin-top:12px;">
+            </a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li class="logged-in">
+                    <a href="#" class="modal-trigger" data-target="modal-account">Hesabınız</a>
+                </li>
+                <li class="logged-in">
+                    <a id="logout" href="#">Çıkış</a>
+                </li>
+                <li class="logged-in">
+                    <a href="#" class="modal-trigger" data-target="modal-create">Makale Oluştur</a>
+                </li>
+                <li class="logged-out">
+                    <a href="#" class="modal-trigger" data-target="modal-login">Giriş</a>
+                </li>
+                <li class="logged-out">
+                    <a href="#" class="modal-trigger" data-target="modal-signup">Üyelik Oluştur</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <!-- Üyelik oluştur modal Start-->
+    <div id="modal-signup" class="modal">
+        <div class="modal-content">
+            <h4>Üyelik oluştur</h4>
+            <form id="signup-form">
+                <div class="input-field">
+                    <input type="email" id="signup-email" required />
+                    <label for="signup-email">Email Adresi</label>
+                </div>
+                <div class="input-field">
+                    <input type="password" id="signup-password" required />
+                    <label for="signup-password">Parola oluştur</label>
+                </div>
+                <div class="input-field">
+                    <input type="text" id="signup-bio" required />
+                    <label for="signup-bio">Kişisel bilgi</label>
+                </div>
+                <button class="btn">Kaydet</button>
+            </form>
+        </div>
+    </div>
+    <!-- Üyelik oluştur modal End  -->
+
+    <!-- Üyelik giriş modal Start-->
+    <div id="modal-login" class="modal">
+        <div class="modal-content">
+            <h4>Giriş oluştur</h4>
+            <form id="signin-form">
+                <div class="input-field">
+                    <input type="email" id="login-email" required />
+                    <label for="login-email">Email Adresi</label>
+                </div>
+                <div class="input-field">
+                    <input type="password" id="login-password" required />
+                    <label for="login-password">Parola oluştur</label>
+                </div>
+                <button class="btn">Giriş</button>
+            </form>
+        </div>
+    </div>
+    <!-- Üyelik giriş modal End  -->
+
+    <!-- Hesabım modal Start-->
+    <div id="modal-account" class="modal">
+        <div class="modal-content center-align">
+            <h4>Hesap detayları</h4>
+            <div class="account-details"></div>
+
+        </div>
+    </div>
+    <!-- hesabım modal End  -->
+
+    <!-- Makale oluştur Start-->
+    <div id="modal-create" class="modal">
+        <div class="modal-content">
+            <h4>Makale oluştur</h4>
+            <form id="makale-form">
+                <div class="input-field">
+                    <input type="text" id="title" required />
+                    <label for="title">Makele başlığı</label>
+                </div>
+                <div class="input-field">
+                    <textarea id="content" cols="50" rows="20" class="materialize-textarea" required></textarea>
+                    <label for="login-password">Parola oluştur</label>
+                </div>
+                <button class="btn">Kaydet</button>
+            </form>
+        </div>
+    </div>
+    <!-- Makale oluştur End  -->
+
+    <!-- Makale Listesi Start -->
+    <div class="container" style="margin-top:40px">
+        <ul class="collapsible popout guides">
+        </ul>
+    </div>
+    <!-- Makale Listesi End -->
+
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-firestore.js"></script>
+
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyDDD3MiWZWP3hC42XCaTTnHICd3pDXzFK8",
+            authDomain: "blog-sistemi.firebaseapp.com",
+            projectId: "blog-sistemi",
+            appId: "1:5837581277:web:4fd439ccc678a7c17de434"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+
+        const auth = firebase.auth();
+        const db = firebase.firestore();
+
+
+    </script>
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/auth.js"></script>
+    <script src="assets/js/material.js"></script>
+</body>
+
+</html>
