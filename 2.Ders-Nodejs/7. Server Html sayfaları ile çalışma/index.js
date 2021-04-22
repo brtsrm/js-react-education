@@ -13,15 +13,19 @@ const server = http.createServer((req, res) => {
     switch (req.url) {
         case "/":
             path += "/index.html";
+            res.statusCode = 200;
             break;
         case "/iletisim":
             path += "iletisim.html";
+            res.statusCode = 200;
             break;
         case "/hakkimizda":
             path += "hakkimizda.html";
+            res.statusCode = 200;
             break;
         default:
             path += "404.html"
+            res.statusCode = 404
     }
 
     res.setHeader("Content-Type", "text/html")
@@ -37,6 +41,6 @@ const server = http.createServer((req, res) => {
 
 })
 
-server.listen(3000, 'localhost', () => {
+server.listen(80, 'https://brtsrm-nodejs-firthtml.netlify.app', () => {
     console.log("3000. port dinleniyor.")
 })
