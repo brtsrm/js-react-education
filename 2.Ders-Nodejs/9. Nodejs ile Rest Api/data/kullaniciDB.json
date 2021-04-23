@@ -1,0 +1,22 @@
+[
+    {
+        "id": "1",
+        "isim": "Berat SARMIŞ",
+        "email": "doqtor9101@gmail.com"
+    },
+    {
+        "id": "2",
+        "isim": "Cem Arslan",
+        "email": "cemarsllan@gmail.com"
+    },
+    {
+        "id": "3",
+        "isim": "Kerem SARMIŞ",
+        "email": "withkerem.python@gmail.com"
+    },
+    {
+        "id": "4",
+        "isim": "Sal",
+        "email": "sal@gmail.com"
+    }
+]
