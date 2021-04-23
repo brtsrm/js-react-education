@@ -2,11 +2,13 @@ const http = require("http");
 const fs = require("fs")
 
 
-const _ = require("lodash")
-
+/* const _ = require("lodash") */
+/* 
 const rastgele = _.random(0,50)
 
-console.log(rastgele)
+console.log(rastgele) */
+
+console.log("Denemeler")
 
 const server = http.createServer((req, res) => {
 
