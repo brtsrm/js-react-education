@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="tr">
+<%- include("./partition/head.ejs")  %> 
+<body>
+    <%- include("./partition/nav.ejs") %>
+    <div class="dersler content">
+        <h2>Bütün Dersler</h2>
+        <table>
+            <tr>
+                <td>Başlık</td>
+                <td>İçerik</td>
+            </tr>
+            <% if(dersler.length > 0){ %>
+                <% dersler.forEach(ders => { %>
+                    <tr>
+                        <td>
+                            <%= ders.baslik %>
+                        </td>
+                        <td>
+                            <%= ders.icerik %>
+                        </td>
+                    </tr>
+            <% })
+        
+        }else{
+        %>
+            <tr>
+                <td>Ders bulunumadı</td>
+            </tr>
+        <%
+        } %>
+
+            
+        </table>
+    </div>
+</body>
+</html>
