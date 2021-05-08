@@ -1,14 +1,22 @@
-import React from 'react'
-// import Basla from './Basla'
-import Not from './Not'
+import React,{useState} from 'react'
+import "./App.css"
 
 function App ()  {
 
+  const [bardakSayisi,barkSayisiniDegistir] = useState(0);
+  const [metin,setMetin] = useState({text:'İçtiğim Su bardak adeti'});
+  const suIctim = () => {
+    barkSayisiniDegistir(bardakSayisi+1)
+    setMetin({
+
+      text:'İçtiğim su sayısı' + bardakSayisi
+    })
+  }
   return(
-   <div className="app">
-      <Not ad="Bilgisayar oyunu yap"  aciklama="aciklama1" tarih=" Mart 1" />
-     <Not ad="alışverişe git" aciklama="aciklama1" tarih=" Mart 2" />
-     <Not ad="Kitap oku" aciklama="aciklama1" tarih=" Mart 3" />
+   <div>
+     <h3>{bardakSayisi}</h3>
+     <p>{metin.text}</p>
+     <button onClick={suIctim}>Su içtim</button>
    </div>
   );
 }
