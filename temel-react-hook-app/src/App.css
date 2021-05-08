@@ -15,5 +15,23 @@
   justify-content: space-around;
   align-items: center;
   display: flex;
+  background: rgb(108, 60, 170);
   flex-direction: column;
+}
+
+.bardak0{
+  color:#fff;
+  font-size:40px;
+}
+.bardak1{
+  color:#00a;
+  font-size:40px;
+}
+.bardak2{
+  color:#0a1;
+  font-size:40px;
+}
+.bardak3{
+  color:#a11;
+  font-size:40px;
 }
