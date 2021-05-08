@@ -1,0 +1,7 @@
+form{
+    position: relative;
+    margin:0 auto;
+}
+.error {
+    color:#ff2000;
+}

@@ -1,0 +1,60 @@
+<%- include("partials/header") %>
+
+
+    <form action="/work-add" method="post">
+        <h2>İş Oluştur</h2>
+        <div class="mb-3">
+
+            <label class="form-label" for="baslik">Başlık</label>
+            <input class="form-control" type="text" name="baslik" required />
+        </div>
+        <div class="mb-3">
+
+            <label class="form-label" for="aciklama">Açıklama</label>
+            <input class="form-control" type="text" name="aciklama" required />
+        </div>
+        <div class="mb-3">
+
+            <label class="form-label" for="date">Başlama Tarihi</label>
+            <input class="form-control" type="date" name="baslama" required />
+        </div>
+        <div class="mb-3">
+
+            <label class="form-label" for="date_finis">Bitiş Tarihi</label>
+            <input class="form-control" type="date" name="bitis" required />
+        </div>
+        <button type="submit" class="btn btn-info">Giriş Yap</button>
+    </form>
+    
+<%- include("partials/footer") %>
+
+<script>
+    const form = document.querySelector("form")
+    
+
+    form.addEventListener("submit", async (e) => {
+        e.preventDefault()
+
+        const baslik =  form.baslik.value
+        const aciklama = form.aciklama.value
+        const baslama = form.baslama.value
+        const bitis = form.bitis.value
+
+
+        try{
+            const res = await fetch('/work-add',{
+                method : 'POST',
+                body: JSON.stringify({baslik,aciklama,baslama,bitis}),
+                headers:{'Content-Type':'application/json'}
+            });
+            const data = await res.json()
+            if(data.work){
+                location.assign("/works")
+            }
+        }catch(err){
+            console.log(err)
+        }
+
+
+    })
+</script>
