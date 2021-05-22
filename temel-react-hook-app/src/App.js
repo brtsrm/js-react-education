@@ -23,6 +23,7 @@ function App ()  {
      <h3 className={bardakStyle}>{bardakSayisi}</h3>
      <p>{metin.text}</p>
      <button onClick={suIctim}>Su içtim</button>
+       <p>Deneme</p>
    </div>
   );
 }
